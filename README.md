@@ -4,7 +4,7 @@
 
 **Spatial method:** A Geographically Weighted Regression (GWR) model.
 
-## Project Organization
+## File Description
 ```
 .
 ├── Exploratory Data Analysis.R   : Exploratory Analysis and Mapping of the Final Dataset

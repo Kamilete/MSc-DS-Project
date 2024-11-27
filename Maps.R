@@ -1,6 +1,5 @@
 # Download data:
 #
-setwd("C:/Users/juang/Documents/Camilo/MSc Data Science/Research Project/Data")
 fem <- read.csv("Femicides.csv")
 #
 # Change character variables as factors:

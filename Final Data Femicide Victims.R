@@ -14,7 +14,6 @@
 
 # Download Femicides cases:
 
-  setwd("C:/Users/juang/Documents/Camilo/MSc Data Science/Research Project/Data")
   dat_fem <- read.csv("Femicides.csv")
 
   # Exclude cases with file or preclusion due to atypical or non-existence
@@ -398,9 +397,8 @@
   
 # Saving
   
-setwd('C:/Users/juang/Documents/Camilo/MSc Data Science/Research Project/Data')
 save(FDF, file="Fem-Data.RData")
 
 # Load main data frame
 
-load(file="Fem-Data.RData")
+# load(file="Fem-Data.RData")

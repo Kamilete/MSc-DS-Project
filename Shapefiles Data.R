@@ -20,8 +20,6 @@
 
 # Read shapefiles
   
-  setwd('C:/Users/juang/Documents/Camilo/MSc Data Science/Research Project/Data/Colombia Shapefile')
-  
   # Read multipolygon data per municipalities
   Mun_shp <- st_read("col_admbnda_adm2_mgn_20200416.shp")
   
@@ -53,7 +51,6 @@ Mun_shp <- Mun_shp[-c(1087,1088),]
   
 # Saving
   
-#setwd('C:/Users/juang/Documents/Camilo/MSc Data Science/Research Project/Data')
 #st_write(Mun_shp, "Mun_Col.shp")
 
 # Spatial Empirical Bayes smoothing
@@ -149,8 +146,6 @@ Mun_shp <- Mun_shp[-c(1087,1088),]
               main.title.size = 2.5, legend.title.size = 2, frame = TRUE, legend.position = c("right", "top"),
               legend.text.size = 2)
   
-  setwd('C:/Users/juang/Documents/Camilo/MSc Data Science/Research Project/Plots/Rates')
-  
   pdf(file="EB_Rate_vs_Raw_Rate.pdf", width=20,height=12)
   
   tmap_arrange(mpa2, mpa1, ncol = 2)
@@ -162,8 +157,6 @@ Mun_shp <- Mun_shp[-c(1087,1088),]
   Mun_shp$Sqr_EB_Fem_Rate <- sqrt(Mun_shp$EB_Fem_Rate)
   
   # Plot ratio of means vs log EB rate with means
-  
-  setwd('C:/Users/juang/Documents/Camilo/MSc Data Science/Research Project/Plots/Rates')
   
   mpa2 = tm_shape(Mun_shp) +
     tm_fill(col = "Rate_Avg_Fem", title = "per 100.000 women", palette = "-RdBu", style = "cont") + # add fill

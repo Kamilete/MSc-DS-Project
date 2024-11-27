@@ -76,8 +76,6 @@ Dat = sf::st_make_valid(Dat)
   
   Dat$res_lm <- residuals(L_mod)
   
-  setwd('C:/Users/juang/Documents/Camilo/MSc Data Science/Research Project/Plots/Models')
-  
   pdf(file="Residuals_OLS_1.pdf", width=15,height=12)
   
   tm_shape(Dat) +
@@ -165,9 +163,7 @@ Dat = sf::st_make_valid(Dat)
   Dat$GWR1_localR2 <- ifelse(Dat$GWR1_localR2 < 0, -Dat$GWR1_localR2,  Dat$GWR1_localR2)
   
   # map Local R2
-  
-  setwd('C:/Users/juang/Documents/Camilo/MSc Data Science/Research Project/Plots/Models')
-  
+    
   pdf(file="GWR1_Local_R2.pdf", width=15,height=12)
   
   tm_shape(Dat) +
@@ -254,9 +250,7 @@ Dat = sf::st_make_valid(Dat)
                 legend.text.size = 1.5, legend.title.size = 1.5)
     
       # Plot local coefficients
-    
-      setwd('C:/Users/juang/Documents/Camilo/MSc Data Science/Research Project/Plots/Models')
-      
+        
       pdf(file="local_coefficients_7_Variables.pdf", width=24,height=36)
       
       tmap_arrange(map1, map2, map4, map5, map6, map7, map9, ncol = 3)
@@ -419,9 +413,7 @@ Dat = sf::st_make_valid(Dat)
                   legend.text.size = 1.5, legend.title.size = 1.5)
       
       # Plot local coefficients and local statistical significance
-      
-      setwd('C:/Users/juang/Documents/Camilo/MSc Data Science/Research Project/Plots/Models')
-      
+          
       #pdf(file="statistical_signif_Variables_1.pdf", width=24,height=36)
       
       #tmap_arrange(map1S, map2S, map4S, map5S, map6S, map7S, map9S, ncol = 3)
@@ -488,9 +480,7 @@ Dat = sf::st_make_valid(Dat)
   # Plot of the model residuals
     
     Dat$res_GWR <- ab_gwr_out$gwr.e
-    
-    setwd('C:/Users/juang/Documents/Camilo/MSc Data Science/Research Project/Plots/Models')
-    
+        
     pdf(file="Residuals_GWR.pdf", width=15,height=12)
     
     tm_shape(Dat) +

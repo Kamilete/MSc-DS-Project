@@ -67,8 +67,6 @@ Mun_shp = sf::st_make_valid(Mun_shp)
   
 # Plot Square root EB rate
 
-  setwd('C:/Users/juang/Documents/Camilo/MSc Data Science/Research Project/Plots/Rates')
-  
   pdf(file="EB_smooth_Femicides_1.pdf", width=15,height=12)
   
   tm_shape(Mun_shp) +
@@ -291,8 +289,6 @@ Mun_shp = sf::st_make_valid(Mun_shp)
   
   # Plot spatial distribution maps
   
-  setwd('C:/Users/juang/Documents/Camilo/MSc Data Science/Research Project/Plots/Exploratory Data Analysis')
-  
   pdf(file="Spatial_distribution_3_Variables_1.pdf", width=24,height=11)
   
   tmap_arrange(map4, map2, map3, ncol = 3)
@@ -351,8 +347,6 @@ Mun_shp = sf::st_make_valid(Mun_shp)
            col = brewer.pal(n = 10, name = "RdBu"), tl.col = "black", )
   
 # Map of Colombia
-  
-  setwd('C:/Users/juang/Documents/Camilo/MSc Data Science/Research Project/Plots/Exploratory Data Analysis')
   
   myboxplot = list()
   

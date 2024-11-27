@@ -7,11 +7,11 @@
 ## Project Organization
 ```
 .
-├── Exploratory Data Analysis.R     : Exploratory Analysis and Mapping of the Final Dataset
-├── Femicide Data.R                 : Data Preprocessing, Filtering, and Merging
-├── Models.R                        : Geographically Weighted Regression (GWR) Model and Results Analysis
-├── Poisson Models.R                : Geographically Weighted Poisson Regression Model Test
-├── README.md                       : Project Description
-├── Research Report.pdf             : Final Report
-└── Shapefiles Data.R               : Merging, Processing and Analyzing Geospatial Data (Shapefiles)
+├── Exploratory Data Analysis.R   : Exploratory Analysis and Mapping of the Final Dataset
+├── Femicide Data.R               : Data Preprocessing, Filtering, and Merging
+├── Models.R                      : Geographically Weighted Regression (GWR) Model and Results Analysis
+├── Poisson Models.R              : Geographically Weighted Poisson Regression Model Test
+├── README.md                     : Project Description
+├── Research Report.pdf           : Final Report
+└── Shapefiles Data.R             : Merging, Processing and Analyzing Geospatial Data (Shapefiles)
 ```

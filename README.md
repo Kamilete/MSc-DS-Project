@@ -1,4 +1,4 @@
-# A Geographically Weighted Regression model for identifying spatial non-stationarity in femicide data for Colombia
+# MSc Data Science Research Project
 
 **Main goal:** Assess if the relationship between femicides and the covariates is constant (stationary) or variable (non-stationary) across municipalities in Colombia, and based on this analysis, we will be able to understand and identify the spatial patterns in the relationship between gender-based homicides in Colombia and their driving factors.
 
@@ -7,10 +7,11 @@
 ## Project Organization
 ```
 .
-├── Exploratory Data Analysis.R       : Survival Analysis kaplan-Meier curve, log-rank test and Cox-proportional Hazard model
-├── Femicide Data.R                   : Data Analysis to understand customer data
-├── Maps.R                            : Random Forest model to predict customer churn
-├── Models.R                          : Flask App
-├── README.md                         : Report
-└── Shapefiles Data.R                 : Shap Explainer
+├── Exploratory Data Analysis.R     : Exploratory Analysis and Mapping of the Final Dataset
+├── Femicide Data.R                 : Data Preprocessing, Filtering, and Merging
+├── Models.R                        : Geographically Weighted Regression (GWR) Model and Results Analysis
+├── Poisson Models.R                : Geographically Weighted Poisson Regression Model Test
+├── README.md                       : Project Description
+├── Research Report.pdf             : Final Report
+└── Shapefiles Data.R               : Merging, Processing and Analyzing Geospatial Data (Shapefiles)
 ```
